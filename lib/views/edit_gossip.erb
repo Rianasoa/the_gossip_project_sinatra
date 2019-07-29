@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Modification du potin</title>
+  </head>
+  <body>
+    <h1>Modifie le potin !</h1>
+    <p>Remodifie via le formulaire ci-dessous</p>
+    <form action='/gossips/edit/<%=params[:id]%>' method='POST'>
+      Balance ton blase : <input type='text' name='gossip_author' value = "<%= params['gossip_author']%>" /><br/><br/>
+      Balance ton potin : <input type='text' name='gossip_content'/><br/><br/>
+      <input type='submit' value="Enregistrer" />
+    </form>
+  </body>
+</html>
